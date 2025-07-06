@@ -8,19 +8,19 @@ import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 import picocli.CommandLine.Parameters;
 
-@Command(name = "ccwc", version = "CCWC 1.0")
+@Command(name = "ccwc", version = "CCWC 1.0", mixinStandardHelpOptions = true, description = "Count number of characters, words, lines in a file")
 public class CCWC implements Runnable {
 
-	@Option(names = "-c", description = "Get Count of Charcters", defaultValue = "false")
+	@Option(names = "-c", description = "Get Count of Bytes", defaultValue = "false")
 	boolean getByteCount;
 
 	@Option(names = "-m", description = "Get Count of Charcters", defaultValue = "false")
 	boolean getCharacterCount;
 
-	@Option(names = "-w", description = "Get Count of Charcters", defaultValue = "false")
+	@Option(names = "-w", description = "Get Count of Words", defaultValue = "false")
 	boolean getWordCount;
 
-	@Option(names = "-l", description = "Get Count of Charcters", defaultValue = "false")
+	@Option(names = "-l", description = "Get Count of Lines", defaultValue = "false")
 	boolean getLineCount;
 
 	@Parameters(index = "0", description = "File for which calculation is done")
