@@ -1,47 +1,10 @@
-# Maven target directory
-/target/
+# Ignore Gradle project-specific cache directory
+.gradle
 
-# Eclipse specific files
-*.classpath
-*.project
-*.settings/
+# Ignore Gradle build output directory
+build
+/*/build
 
-# IntelliJ IDEA specific files
-*.iml
-.idea/
-*.ipr
-*.iws
-out/
-
-# NetBeans specific files
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
-
-# VS Code
-.vscode/
-
-# OS-specific files
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-
-# Generated files or backups
-*.class
-*.jar
-*.war
-*.ear
-*.swp
-*.swo
-*~
-
-# Maven wrapper
-.mvn/
-!/.mvn/wrapper/maven-wrapper.jar
-mvnw
-mvnw.cmd
+#Ignore Bin Folder
+bin
+/*/bin
